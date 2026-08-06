@@ -1,6 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import {Prisma} from '@prisma/client'
 import { DatabaseService } from '../database/database.service';
+import {Throttle,SkipThrottle} from '@nestjs/throttler';
+
+
 
 @Injectable()
 export class EmployeesService {
